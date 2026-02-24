@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'initier à la sécurité des SI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-grid"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i> InfoSec<span class="highlight">.Academy</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#modules">Modules</a></li>
+            <li><a href="#attacks">Attaques</a></li>
+            <li><a href="#attackers">Attaquants</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <span class="badge">Nouveau Cours 2026</span>
+            <h1>S'initier à la <br><span class="glitch" data-text="Sécurité des SI">Sécurité des SI</span></h1>
+            <p>Comprendre, Analyser et Protéger. Plongez dans le monde de la cybersécurité et apprenez les bases
+                essentielles pour sécuriser les systèmes d'information.</p>
+            <a href="#modules" class="cta-button">Commencer l'apprentissage <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-visual">
+            <div class="shield-container">
+                <i class="fas fa-user-secret fa-5x"></i>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="introduction" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pourquoi la Sécurité ?</h2>
+                <div class="line"></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Protection des Données</h3>
+                    <p>Assurer que les informations sensibles restent confidentielles et ne tombent pas entre les
+                        mauvaises mains.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Intégrité du Système</h3>
+                    <p>Garantir que les données et les systèmes ne sont pas modifiés ou corrompus de manière non
+                        autorisée.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Disponibilité</h3>
+                    <p>S'assurer que les services et les données sont accessibles aux utilisateurs légitimes quand ils
+                        en ont besoin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modules" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Modules de Formation</h2>
+                <p>Un parcours progressif pour maîtriser les bases</p>
+            </div>
+            <div class="modules-container">
+                <!-- Module 1 -->
+                <article class="module-card">
+                    <div class="module-number">01</div>
+                    <div class="module-content">
+                        <h3>Les Fondamentaux</h3>
+                        <p>Introduction à la sécurité des SI, contexte actuel et enjeux majeurs pour les entreprises et
+                            les particuliers.</p>
+                        <a href="#" class="read-more" data-id="1">Explorer <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="module-card active">
+                    <div class="module-number">02</div>
+                    <div class="module-content">
+                        <h3>La Triade CIA</h3>
+                        <p>Confidentialité, Intégrité, Disponibilité. Les trois piliers qui soutiennent toute stratégie
+                            de sécurité.</p>
+                        <ul class="topics">
+                            <li><i class="fas fa-lock"></i> Confidentialité</li>
+                            <li><i class="fas fa-file-signature"></i> Intégrité</li>
+                            <li><i class="fas fa-clock"></i> Disponibilité</li>
+                        </ul>
+                        <a href="#" class="read-more" data-id="2">Explorer <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-number">03</div>
+                    <div class="module-content">
+                        <h3>Menaces & Attaques</h3>
+                        <p>Identifier les ennemis : Virus, Malwares, Phishing, Ransomwares et Ingénierie Sociale.</p>
+                        <a href="#" class="read-more" data-id="3">Explorer <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-number">04</div>
+                    <div class="module-content">
+                        <h3>Bonnes Pratiques</h3>
+                        <p>Comment se protéger au quotidien : Mots de passe forts, authentification 2FA, mises à jour et
+                            vigilance.</p>
+                        <a href="#" class="read-more" data-id="4">Explorer <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="attacks" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Les Cyber-Attaques Courantes</h2>
+                <div class="line" style="background: #ff453a;"></div>
+                <p>Connaitre son ennemi est la première étape de la défense</p>
+            </div>
+            <div class="modules-container">
+                <!-- Attack 1 -->
+                <article class="module-card attack-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-database"></i> SQL Injection</h3>
+                        <p>Injection de code SQL malveillant pour manipuler une base de données.</p>
+                        <a href="#" class="read-more" data-id="5" style="color: #ff453a;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attack 2 -->
+                <article class="module-card attack-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-code"></i> XSS (Cross-Site Scripting)</h3>
+                        <p>Insertion de scripts malveillants dans des pages web vues par d'autres utilisateurs.</p>
+                        <a href="#" class="read-more" data-id="6" style="color: #ff453a;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attack 3 -->
+                <article class="module-card attack-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-server"></i> DDoS</h3>
+                        <p>Attaque par Déni de Service Distribué pour rendre un site indisponible.</p>
+                        <a href="#" class="read-more" data-id="7" style="color: #ff453a;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attack 4 -->
+                <article class="module-card attack-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-user-secret"></i> Man-in-the-Middle</h3>
+                        <p>Interception des communications entre deux parties sans qu'elles le sachent.</p>
+                        <a href="#" class="read-more" data-id="8" style="color: #ff453a;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attack 5 -->
+                <article class="module-card attack-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-key"></i> Brute Force</h3>
+                        <p>Tentative de deviner un mot de passe en essayant toutes les combinaisons possibles.</p>
+                        <a href="#" class="read-more" data-id="9" style="color: #ff453a;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attack 6: Phishing -->
+                <article class="module-card attack-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-envelope-open-text"></i> Phishing</h3>
+                        <p>Technique frauduleuse visant à leurrer l'internaute pour communiquer des données
+                            personnelles.</p>
+                        <a href="#" class="read-more" data-id="10" style="color: #ff453a;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attack 7: Ransomware -->
+                <article class="module-card attack-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-file-excel"></i> Ransomware</h3>
+                        <p>Logiciel malveillant qui prend en otage des données personnelles contre une rançon.</p>
+                        <a href="#" class="read-more" data-id="11" style="color: #ff453a;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attack 8: Zero-Day -->
+                <article class="module-card attack-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-bomb"></i> Zero-Day Exploit</h3>
+                        <p>Attaque ciblant une vulnérabilité informatique inconnue du fournisseur.</p>
+                        <a href="#" class="read-more" data-id="12" style="color: #ff453a;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attack 9: Insider Threat -->
+                <article class="module-card attack-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-user-ninja"></i> Insider Threat</h3>
+                        <p>Menace provenant d'une personne au sein de l'organisation (employé, ex-employé).</p>
+                        <a href="#" class="read-more" data-id="13" style="color: #ff453a;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="attackers" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>L'Écosystème des Attaquants</h2>
+                <div class="line" style="background: #ff9500;"></div>
+                <p>Comprendre qui sont les acteurs derrière les menaces</p>
+            </div>
+            <div class="modules-container">
+                <!-- Attacker 1 -->
+                <article class="module-card attacker-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-baby"></i> Script Kiddies</h3>
+                        <p>Utilisent des outils créés par d'autres sans comprendre leur fonctionnement.</p>
+                        <a href="#" class="read-more" data-id="14" style="color: #ff9500;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attacker 2 -->
+                <article class="module-card attacker-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-bullhorn"></i> Hacktivistes</h3>
+                        <p>Attaquent pour des motivations politiques, sociales ou idéologiques.</p>
+                        <a href="#" class="read-more" data-id="15" style="color: #ff9500;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attacker 3 -->
+                <article class="module-card attacker-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-user-ninja"></i> Cyber-Criminels</h3>
+                        <p>Professionnels motivés par le gain financier (Ransomware, vol de données).</p>
+                        <a href="#" class="read-more" data-id="16" style="color: #ff9500;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attacker 4 -->
+                <article class="module-card attacker-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-globe-americas"></i> États-Nations</h3>
+                        <p>Acteurs parrainés par des gouvernements pour l'espionnage ou le sabotage.</p>
+                        <a href="#" class="read-more" data-id="17" style="color: #ff9500;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Attacker 5 -->
+                <article class="module-card attacker-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-user-tie"></i> Menaces Internes</h3>
+                        <p>Employés ou partenaires malveillants ou négligents au sein de l'organisation.</p>
+                        <a href="#" class="read-more" data-id="18" style="color: #ff9500;">Détails <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Roadmap du Hacker Éthique</h2>
+                <div class="line"></div>
+                <p>Le chemin pour devenir un expert en cybersécurité</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>1. Les Bases (0-6 Mois)</h3>
+                        <p>Réseaux (TCP/IP), Linux (Command Line), et Scripting (Python/Bash).</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>2. Sécurité Offensive (6-12 Mois)</h3>
+                        <p>Pentesting, Scan de vulnérabilités, Metasploit, et Burp Suite.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>3. Sécurité Défensive (1-2 Ans)</h3>
+                        <p>Blue Teaming, SIEM, Analyse de logs, et Réponse aux incidents.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>4. Spécialisation (2+ Ans)</h3>
+                        <p>Reverse Engineering, Malware Analysis, ou Cloud Security.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solutions de Sécurité</h2>
+                <div class="line" style="background: #34c759;"></div>
+                <p>Comment construire une architecture resiliente et sûre</p>
+            </div>
+            <div class="modules-container">
+                <!-- Solution 1 -->
+                <article class="module-card solution-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-layer-group"></i> Défense en Profondeur</h3>
+                        <p>Multiplier les couches de sécurité pour ralentir et arrêter les attaquants.</p>
+                        <a href="#" class="read-more" data-id="19" style="color: #34c759;">Explorer <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Solution 2 -->
+                <article class="module-card solution-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-id-card"></i> Gestion des Identités (IAM)</h3>
+                        <p>Assurer que seules les bonnes personnes accèdent aux bonnes ressources.</p>
+                        <a href="#" class="read-more" data-id="20" style="color: #34c759;">Explorer <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Solution 3 -->
+                <article class="module-card solution-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-file-shield"></i> Chiffrement & Backup</h3>
+                        <p>Protéger les données au repos et en transit, et garantir leur récupération.</p>
+                        <a href="#" class="read-more" data-id="21" style="color: #34c759;">Explorer <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Solution 4 -->
+                <article class="module-card solution-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-eye"></i> Surveillance & SIEM</h3>
+                        <p>Monitorer les activités suspectes en temps réel pour une réponse rapide.</p>
+                        <a href="#" class="read-more" data-id="22" style="color: #34c759;">Explorer <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Solution 5 -->
+                <article class="module-card solution-card">
+                    <div class="module-content">
+                        <h3><i class="fas fa-graduation-cap"></i> Sensibilisation</h3>
+                        <p>Former les utilisateurs, car l'humain est souvent le maillon le plus faible.</p>
+                        <a href="#" class="read-more" data-id="23" style="color: #34c759;">Explorer <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="password-tool" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testez Votre Mot de Passe</h2>
+                <div class="line"></div>
+                <p>Est-il assez fort pour résister à une attaque par force brute ?</p>
+            </div>
+            <div class="password-container">
+                <div class="input-group">
+                    <input type="password" id="password-input" placeholder="Entrez un mot de passe...">
+                    <button id="toggle-password"><i class="fas fa-eye"></i></button>
+                </div>
+                <div class="strength-meter">
+                    <div class="strength-bar" id="strength-bar"></div>
+                </div>
+                <p id="password-feedback" class="password-feedback">Entrez un mot de passe pour commencer.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="section dark-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>La Boîte à Outils</h2>
+                <div class="line"></div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <i class="fas fa-terminal"></i>
+                    <h4>Kali Linux</h4>
+                    <p>Le système d'exploitation le plus populaire pour le pentesting.</p>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h4>Wireshark</h4>
+                    <p>Pour analyser le trafic réseau en temps réel.</p>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-bug"></i>
+                    <h4>Metasploit</h4>
+                    <p>Framework puissant pour tester les vulnérabilités.</p>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-globe"></i>
+                    <h4>Burp Suite</h4>
+                    <p>L'outil indispensable pour la sécurité web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="quiz-container">
+            <h2>Testez Vos Connaissances</h2>
+            <p>Prêt à relever le défi ?</p>
+            <div class="quiz-box">
+                <div class="question">
+                    <h4>Qu'est-ce que le Phishing ?</h4>
+                    <div class="options">
+                        <button class="option" onclick="checkAnswer(this, false)">Un virus informatique</button>
+                        <button class="option" onclick="checkAnswer(this, true)">Une technique de fraude par
+                            email</button>
+                        <button class="option" onclick="checkAnswer(this, false)">Un logiciel antivirus</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Modals Section -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 id="modal-title">Titre du Module</h2>
+                <button class="close-modal" id="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body" id="modal-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Content for Modals -->
+    <div id="content-storage" style="display: none;">
+        <!-- Module 1 -->
+        <div data-id="1">
+            <p>La sécurité des systèmes d'information (SSI) est l'ensemble des moyens techniques, organisationnels,
+                juridiques et humains nécessaires à la mise en place de moyens visant à empêcher l'utilisation non
+                autorisée, le mauvais usage, la modification ou le détournement du système d'information.</p>
+
+            <h3>Pourquoi est-ce vital ?</h3>
+            <p>Dans un monde hyperconnecté, les données sont le "nouvel or". Les entreprises et les individus sont la
+                cible constante de cybercriminels cherchant à voler des données, extorquer de l'argent ou perturber les
+                services.</p>
+
+            <h3>Les enjeux majeurs</h3>
+            <ul>
+                <li><strong>Image de marque :</strong> Une attaque réussie peut détruire la réputation d'une entreprise.
+                </li>
+                <li><strong>Coût financier :</strong> Pertes directes (vols), amendes (RGPD), et coût de remédiation.
+                </li>
+                <li><strong>Continuité d'activité :</strong> Assurer que l'entreprise peut continuer à fonctionner même
+                    en cas de crise.</li>
+            </ul>
+        </div>
+
+        <!-- Module 2 -->
+        <div data-id="2">
+            <p>Le modèle CIA (ou DIC en français) est la pierre angulaire de la sécurité informatique. Il définit les
+                trois objectifs principaux de la sécurité.</p>
+
+            <h3>1. Confidentialité (Confidentiality)</h3>
+            <p>Garantir que l'information n'est accessible qu'à ceux qui ont l'autorisation d'y accéder.</p>
+            <ul>
+                <li>Exemple : Chiffrement des emails, gestion des droits d'accès.</li>
+            </ul>
+
+            <h3>2. Intégrité (Integrity)</h3>
+            <p>Garantir que l'information n'a pas été modifiée ou détruite de façon non autorisée.</p>
+            <ul>
+                <li>Exemple : Sommes de contrôle (Hash), signatures numériques.</li>
+            </ul>
+
+            <h3>3. Disponibilité (Availability)</h3>
+            <p>Garantir que l'information et les services sont accessibles quand on en a besoin.</p>
+            <ul>
+                <li>Exemple : Backups, protection anti-DDoS, redondance des serveurs.</li>
+            </ul>
+        </div>
+
+        <!-- Module 3 -->
+        <div data-id="3">
+            <p>Pour mieux se défendre, il faut connaître son ennemi. Voici les menaces les plus courantes en 2026.</p>
+
+            <h3>Malwares (Logiciels Malveillants)</h3>
+            <ul>
+                <li><strong>Virus :</strong> Se propage en infectant d'autres fichiers.</li>
+                <li><strong>Ransomware :</strong> Chiffre vos données et demande une rançon pour la clé de
+                    déchiffrement.</li>
+                <li><strong>Spyware :</strong> Espionne vos activités et vole vos identifiants.</li>
+            </ul>
+
+            <h3>Ingénierie Sociale</h3>
+            <p>L'art de manipuler les gens pour qu'ils divulguents des informations confidentielles.</p>
+            <ul>
+                <li><strong>Phishing (Hameçonnage) :</strong> Emails frauduleux imitant des entités légitimes (banques,
+                    impôts).</li>
+                <li><strong>Vishing :</strong> Phishing par téléphone.</li>
+            </ul>
+        </div>
+
+        <!-- Module 4 -->
+        <div data-id="4">
+            <p>La sécurité n'est pas qu'une affaire d'experts. Voici les gestes simples qui sauvent.</p>
+
+            <h3>Gestion des Mots de Passe</h3>
+            <ul>
+                <li>Utilisez des phrases de passe longues (ex: "J'aime_Manger_Des_Pommes_Rouges!").</li>
+                <li>N'utilisez jamais le même mot de passe sur deux sites différents.</li>
+                <li>Utilisez un gestionnaire de mots de passe (Bitwarden, Dashlane, etc.).</li>
+            </ul>
+
+            <h3>Authentification à Double Facteur (2FA)</h3>
+            <p>Activez-la partout où c'est possible. Même si un pirate a votre mot de passe, il ne peut pas entrer sans
+                votre téléphone.</p>
+
+            <h3>Vigilance et Mises à jour</h3>
+            <ul>
+                <li>Mettez à jour vos systèmes (Windows, Android, iOS) dès que possible.</li>
+                <li>Ne cliquez jamais sur des liens suspects dans des emails inattendus.</li>
+                <li>Sauvegardez vos données régulièrement sur un support externe déconnecté.</li>
+            </ul>
+        </div>
+
+        <!-- Module 5: SQLi -->
+        <div data-id="5">
+            <p style="color: #ff453a; font-weight: bold;">ATTENTION: Cette technique est illégale sans autorisation.</p>
+            <h3>SQL Injection (SQLi)</h3>
+            <p>Une injection SQL se produit lorsqu'un attaquant insère du code SQL malveillant dans un champ d'entrée
+                (comme
+                un formulaire de connexion) pour manipuler la base de données.</p>
+            <ul>
+                <li><strong>Impact :</strong> Vol de données, suppression de tables, accès administrateur.</li>
+                <li><strong>Exemple :</strong> Entrer <code>' OR 1=1 --</code> dans un champ de mot de passe pour
+                    contourner
+                    l'authentification.</li>
+                <li><strong>Défense :</strong> Utiliser des requêtes préparées (Prepared Statements).</li>
+            </ul>
+        </div>
+
+        <!-- Module 6: XSS -->
+        <div data-id="6">
+            <h3>Cross-Site Scripting (XSS)</h3>
+            <p>Le XSS permet à un attaquant d'injecter des scripts malveillants (généralement JavaScript) dans des pages
+                web
+                consultées par d'autres utilisateurs.</p>
+            <ul>
+                <li><strong>Impact :</strong> Vol de cookies de session, redirection vers des sites de phishing.</li>
+                <li><strong>Défense :</strong> Échapper (Escape) toutes les données entrantes et sortantes, utiliser CSP
+                    (Content Security Policy).</li>
+            </ul>
+        </div>
+
+        <!-- Module 7: DDoS -->
+        <div data-id="7">
+            <h3>DDoS (Distributed Denial of Service)</h3>
+            <p>Une attaque DDoS vise à rendre un serveur, un service ou une infrastructure indisponible en le
+                surchargeant
+                de trafic provenant de multiples sources (botnet).</p>
+            <ul>
+                <li><strong>Impact :</strong> Arrêt de service, perte de revenus, image de marque endommagée.</li>
+                <li><strong>Défense :</strong> Utiliser des services de mitigation (Cloudflare, AWS Shield), augmenter
+                    la
+                    bande passante.</li>
+            </ul>
+        </div>
+
+        <!-- Module 8: MITM -->
+        <div data-id="8">
+            <h3>Man-in-the-Middle (MitM)</h3>
+            <p>L'attaquant s'interpose secrètement entre deux parties qui croient communiquer directement entre elles.
+            </p>
+            <ul>
+                <li><strong>Impact :</strong> Écoute clandestine, modification des données en transit.</li>
+                <li><strong>Exemple :</strong> Un hacker sur un WiFi public non sécurisé intercepte vos données.</li>
+                <li><strong>Défense :</strong> Utiliser HTTPS partout, VPN.</li>
+            </ul>
+        </div>
+
+        <!-- Module 9: Brute Force -->
+        <div data-id="9">
+            <h3>Attaque par Force Brute</h3>
+            <p>Consiste à tester toutes les combinaisons possibles de mots de passe jusqu'à trouver la bonne.</p>
+            <ul>
+                <li><strong>Impact :</strong> Accès non autorisé aux comptes.</li>
+                <li><strong>Défense :</strong> Mots de passe longs et complexes, verrouillage après tentatives échouées,
+                    2FA.</li>
+            </ul>
+        </div>
+
+        <!-- Module 10: Phishing -->
+        <div data-id="10">
+            <h3>Phishing (Hameçonnage)</h3>
+            <p>Le phishing est une technique utilisée par des fraudeurs pour obtenir des renseignements personnels dans
+                le
+                but de perpétrer une usurpation d'identité.</p>
+            <ul>
+                <li><strong>Vecteur :</strong> E-mails, SMS (Smishing), Appels (Vishing).</li>
+                <li><strong>Indicateurs :</strong> Urgence artificielle, fautes d'orthographe, liens suspects.</li>
+                <li><strong>Défense :</strong> Vérifier l'adresse de l'expéditeur, ne jamais cliquer sur des liens
+                    douteux,
+                    authentification multifacteur.</li>
+            </ul>
+        </div>
+
+        <!-- Module 11: Ransomware -->
+        <div data-id="11">
+            <h3>Ransomware (Rançongiciel)</h3>
+            <p>Un logiciel de rançon est un logiciel malveillant qui bloque l'accès à l'ordinateur ou aux fichiers de la
+                victime et qui réclame le paiement d'une rançon pour en rétablir l'accès.</p>
+            <ul>
+                <li><strong>Impact :</strong> Perte définitive de données, interruption d'activité, coûts financiers
+                    majeurs.</li>
+                <li><strong>Défense :</strong> Sauvegardes régulières et déconnectées (règle 3-2-1), mises à jour de
+                    sécurité, formation des utilisateurs.</li>
+            </ul>
+        </div>
+
+        <!-- Module 12: Zero-Day Exploit -->
+        <div data-id="12">
+            <h3>Zero-Day Exploit</h3>
+            <p>Une attaque "Zero-day" exploite une faille de sécurité logicielle inconnue du fournisseur ou des
+                développeurs. Le terme "zero-day" fait référence au fait que les développeurs ont eu "zéro jour" pour
+                corriger la faille.</p>
+            <ul>
+                <li><strong>Dangerosité :</strong> Extrêmement élevée car aucun correctif n'existe au moment de
+                    l'attaque.
+                </li>
+                <li><strong>Défense :</strong> Défense en profondeur, segmentation réseau, surveillance comportementale
+                    (EDR/XDR).</li>
+            </ul>
+        </div>
+
+        <!-- Module 13: Insider Threat -->
+        <div data-id="13">
+            <h3>Insider Threat (Menace Interne)</h3>
+            <p>Une menace interne provient d'individus qui ont ou ont eu un accès autorisé aux actifs de l'organisation
+                et
+                qui utilisent cet accès, de manière malveillante ou non, pour nuire à l'organisation.</p>
+            <ul>
+                <li><strong>Types :</strong> Malveillant (sabotage, espionnage), Négligent (erreur humaine), Compromis
+                    (identifiants volés).</li>
+                <li><strong>Défense :</strong> Principe du moindre privilège, surveillance des accès (DLP), révocation
+                    immédiate des accès après départ.</li>
+            </ul>
+        </div>
+
+        <!-- Attacker 14: Script Kiddies -->
+        <div data-id="14">
+            <h3>Script Kiddies</h3>
+            <p>Ce sont souvent des débutants ou des personnes curieuses qui utilisent des codes et des outils de
+                piratage
+                existants trouvés sur Internet.</p>
+            <ul>
+                <li><strong>Motivation :</strong> Curiosité, divertissement, ou démonstration de force (souvent sur les
+                    réseaux sociaux).</li>
+                <li><strong>Niveau technique :</strong> Faible (dépendent entièrement des outils d'autrui).</li>
+                <li><strong>Impact :</strong> Souvent limité, mais peuvent causer des dégâts par accident ou via des
+                    attaques DoS simples.</li>
+            </ul>
+        </div>
+
+        <!-- Attacker 15: Hacktivistes -->
+        <div data-id="15">
+            <h3>Hacktivistes</h3>
+            <p>Ce sont des pirates qui agissent pour défendre une cause sociale, religieuse ou politique.</p>
+            <ul>
+                <li><strong>Motivation :</strong> Militantisme, désobéissance civile numérique.</li>
+                <li><strong>Exemple :</strong> Anonymous, Wikileaks (dans certains contextes).</li>
+                <li><strong>Techniques :</strong> Défaçage de sites web, attaques DDoS, fuites de documents
+                    confidentiels.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Attacker 16: Cyber-Criminels -->
+        <div data-id="16">
+            <h3>Cyber-Criminels</h3>
+            <p>Des professionnels du crime qui opèrent en ligne pour des gains financiers.</p>
+            <ul>
+                <li><strong>Motivation :</strong> Argent (Rançon, revente de données, fraude bancaire).</li>
+                <li><strong>Organisation :</strong> Souvent structurés comme de véritables entreprises
+                    (Ransomware-as-a-Service).</li>
+                <li><strong>Cibles :</strong> Entreprises, hôpitaux, particuliers fortunés.</li>
+            </ul>
+        </div>
+
+        <!-- Attacker 17: États-Nations -->
+        <div data-id="17">
+            <h3>États-Nations (State-Sponsored)</h3>
+            <p>Des groupes de hackers hautement qualifiés travaillant directement ou indirectement pour un gouvernement.
+            </p>
+            <ul>
+                <li><strong>Motivation :</strong> Espionnage industriel, déstabilisation politique, sabotage
+                    d'infrastructures critiques.</li>
+                <li><strong>Moyens :</strong> Ressources quasi illimitées, accès à des failles Zero-Day.</li>
+                <li><strong>Persistance :</strong> Peuvent rester cachés dans un réseau pendant des années (APT -
+                    Advanced
+                    Persistent Threat).</li>
+            </ul>
+        </div>
+
+        <!-- Attacker 18: Menaces Internes -->
+        <div data-id="18">
+            <h3>Menaces Internes (Insider Threats)</h3>
+            <p>Personnes au sein de l'organisation (employés, prestataires) qui abusent de leurs droits d'accès.</p>
+            <ul>
+                <li><strong>Motivation :</strong> Vengeance, appât du gain, ou simple négligence technique.</li>
+                <li><strong>Danger :</strong> Ils connaissent déjà le réseau et possèdent des identifiants valides.</li>
+                <li><strong>Prévention :</strong> Surveillance étroite, principe du moindre privilège.</li>
+            </ul>
+        </div>
+
+        <!-- Solution 19: Défense en Profondeur -->
+        <div data-id="19">
+            <h3>Défense en Profondeur</h3>
+            <p>Concept consistant à utiliser plusieurs couches de défense pour protéger les données.</p>
+            <ul>
+                <li><strong>Analogie :</strong> Un château avec des douves, des remparts, puis une tour de garde.</li>
+                <li><strong>Couches :</strong> Physique, Réseau, Hôte, Application, Données.</li>
+                <li><strong>Avantage :</strong> Si une couche tombe, les autres continuent de protéger la cible.</li>
+            </ul>
+        </div>
+
+        <!-- Solution 20: Gestion des Identités (IAM) -->
+        <div data-id="20">
+            <h3>Gestion des Identités et des Accès (IAM)</h3>
+            <p>L'IAM garantit que les bonnes personnes ont accès aux bonnes ressources, au bon moment, pour les bonnes
+                raisons.</p>
+            <ul>
+                <li><strong>Piliers :</strong> Authentification (qui êtes-vous ?), Autorisation (que pouvez-vous faire
+                    ?).
+                </li>
+                <li><strong>Meilleures pratiques :</strong> Authentification Multi-Facteur (MFA), Moindre privilège.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Solution 21: Chiffrement & Backup -->
+        <div data-id="21">
+            <h3>Chiffrement et Sauvegardes</h3>
+            <p>Les deux remparts ultimes contre la perte de données.</p>
+            <ul>
+                <li><strong>Chiffrement :</strong> Rend les données illisibles sans la clé (protection contre le vol).
+                </li>
+                <li><strong>Sauvegardes :</strong> Permettent de restaurer les systèmes après un ransomware ou une
+                    panne.
+                </li>
+                <li><strong>Règle 3-2-1 :</strong> 3 copies, 2 supports différents, 1 copie hors ligne (Air-gapped).
+                </li>
+            </ul>
+        </div>
+
+        <!-- Solution 22: Surveillance & SIEM -->
+        <div data-id="22">
+            <h3>Surveillance et SIEM</h3>
+            <p>Le SIEM (Security Information and Event Management) centralise les logs pour détecter les anomalies.</p>
+            <ul>
+                <li><strong>Rôle :</strong> Détection précoce des intrusions.</li>
+                <li><strong>Fonctionnement :</strong> Analyse les corrélations entre différents événements réseau
+                    suspects.
+                </li>
+                <li><strong>Réponse :</strong> Alerte les équipes de sécurité (SOC) en temps réel.</li>
+            </ul>
+        </div>
+
+        <!-- Solution 23: Sensibilisation -->
+        <div data-id="23">
+            <h3>Sensibilisation et Formation</h3>
+            <p>L'aspect humain de la cybersécurité est crucial car 90% des cyberattaques commencent par une erreur
+                humaine.
+            </p>
+            <ul>
+                <li><strong>Actions :</strong> Simulations de phishing, formations aux bonnes pratiques, culture de la
+                    sécurité.</li>
+                <li><strong>Objectif :</strong> Transformer l'utilisateur de "victime potentielle" en "premier capteur"
+                    de
+                    menace.</li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions Fréquentes</h2>
+                <div class="line"></div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Faut-il être expert en mathématiques ?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Non, pas nécessairement. La logique et la curiosité sont plus importantes, sauf pour la
+                            cryptographie avancée.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quel est le salaire moyen ?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les salaires débutent souvent autour de 35-40k€/an et peuvent rapidement atteindre 60k€+ avec
+                            de l'expérience et des certifications.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Est-ce que le hacking est illégal ?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le "Hacking Éthique" (avec autorisation) est légal et très recherché. Le piratage sans
+                            autorisation est un délit grave puni par la loi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 InfoSec Academy. Développé pour l'apprentissage.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
